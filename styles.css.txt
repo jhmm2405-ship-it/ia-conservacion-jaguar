@@ -1,0 +1,80 @@
+/* styles.css - estilos básicos y responsivos */
+:root{
+  --accent:#7b3fa3;
+  --muted:#666;
+  --bg:#fafafa;
+  --card:#ffffff;
+  --max-width:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  width:92%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:1rem 0;
+}
+
+/* header */
+.site-header{
+  background:linear-gradient(90deg,var(--accent),#a86bbf);
+  color:white;
+  padding:0.8rem 0;
+}
+.header-grid{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+.brand h1{margin:0;font-size:1.25rem}
+.subtitle{margin:0;font-size:0.9rem;opacity:0.95}
+
+/* nav */
+.main-nav{
+  margin-left:auto;
+  display:flex;
+  gap:1rem;
+  align-items:center;
+}
+.main-nav a{color:white;text-decoration:none;font-weight:600}
+.menu-btn{display:none;background:transparent;border:0;color:white;font-size:1.25rem}
+
+/* main cards */
+.card{
+  background:var(--card);
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(33,33,33,0.06);
+  padding:1.1rem;
+  margin:1rem 0;
+}
+
+/* grid two columns for analysis */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+
+/* rubric table */
+.rubric{width:100%;border-collapse:collapse}
+.rubric th, .rubric td{padding:0.6rem;border:1px solid #eee;text-align:left}
+.rubric th{background:#f4f4f7}
+
+/* small text */
+.small{font-size:0.85rem;color:var(--muted)}
+
+/* footer */
+.site-footer{padding:1rem 0;text-align:center;color:var(--muted)}
+
+/* responsive */
+@media (max-width:800px){
+  .main-nav{position:fixed;right:0;top:56px;background:white;box-shadow:0 6px 18px rgba(0,0,0,0.08);flex-direction:column;padding:0.6rem;border-radius:6px;display:none}
+  .menu-btn{display:block;margin-left:auto}
+  .main-nav.show{display:flex}
+  .two-col{grid-template-columns:1fr}
+}

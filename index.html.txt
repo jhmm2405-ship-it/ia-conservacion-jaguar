@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IA para el cuidado del entorno — Biología II</title>
+
+  <!-- Google Font (opcional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- estilos -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- meta para redes -->
+  <meta name="description" content="Proyecto: Uso de IA para el monitoreo y conservación del jaguar. Proyecto de Biología II.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <h1>IA para cuidar nuestro entorno</h1>
+        <p class="subtitle">Biología II — Proyecto transversal: IA aplicada a la biología</p>
+      </div>
+
+      <button id="menu-btn" class="menu-btn" aria-label="Abrir menú">☰</button>
+
+      <nav id="main-nav" class="main-nav">
+        <a href="#introduccion">Introducción</a>
+        <a href="#metodologia">Metodología</a>
+        <a href="#analisis">Análisis</a>
+        <a href="#rubrica">Rúbrica</a>
+        <a href="#referencias">Referencias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Sección: Introducción / Resumen -->
+    <section id="introduccion" class="card">
+      <h2>Resumen del proyecto</h2>
+      <p>
+        Caso de estudio: <strong>Uso de Inteligencia Artificial (visión por computadora) para el monitoreo
+        y conservación del jaguar (<em>Panthera onca</em>)</strong> en ecosistemas mexicanos.
+      </p>
+      <p>Integrantes: Jonathan Yahir Hernández Benítez, Juan Hazael Martínez Morales, Violeta Guadalupe Godínez Gutiérrez, Zahira Llamileht Hernández Hernández.</p>
+      <p>La bitácora y síntesis usada para esta página provienen del documento entregado por el equipo. :contentReference[oaicite:1]{index=1}</p>
+    </section>
+
+    <!-- Sección: Conceptos biológicos -->
+    <section id="metodologia" class="card">
+      <h2>Conceptos biológicos y funcionamiento</h2>
+      <ul class="concepts">
+        <li><strong>Ecosistema:</strong> selvas tropicales (Selva Lacandona, Calakmul).</li>
+        <li><strong>Biodiversidad:</strong> el jaguar como especie sombrilla.</li>
+        <li><strong>Niveles tróficos:</strong> depredador tope que regula poblaciones.</li>
+        <li><strong>Dinámica de poblaciones:</strong> uso del territorio y corredores biológicos.</li>
+      </ul>
+
+      <h3>Funcionamiento básico de la IA (pasos)</h3>
+      <ol>
+        <li><strong>Captura:</strong> cámaras trampa que generan miles de imágenes/video.</li>
+        <li><strong>Procesamiento:</strong> modelos de visión por computadora filtran y clasifican especies.</li>
+        <li><strong>Identificación individual:</strong> reconocimiento por patrones en las rosetas.</li>
+        <li><strong>Análisis:</strong> estimaciones de abundancia, movimiento y amenazas.</li>
+      </ol>
+    </section>
+
+    <!-- Sección: Análisis de impacto -->
+    <section id="analisis" class="card">
+      <h2>Análisis de impacto</h2>
+      <div class="two-col">
+        <div>
+          <h4>Beneficios</h4>
+          <ul>
+            <li>Ahorro de tiempo a los biólogos.</li>
+            <li>Mayor precisión en conteos.</li>
+            <li>Monitoreo 24/7 en zonas remotas.</li>
+            <li>Detección de amenazas (p. ej. cazadores furtivos).</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Limitaciones y Riesgos Éticos</h4>
+          <ul>
+            <li>Alto costo inicial y necesidad de grandes datasets.</li>
+            <li>Fallas algorítmicas o de hardware (humedad, baterías).</li>
+            <li>Riesgo de fuga de datos que facilite la caza furtiva.</li>
+            <li>Sesgo por falta de imágenes en condiciones particulares (noche, lluvia).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Rúbrica (resumen de la imagen) -->
+    <section id="rubrica" class="card">
+      <h2>Rúbrica de evaluación (resumen)</h2>
+      <p>La rúbrica usada para evaluar el proyecto contiene criterios como: Rigor científico, Integración de la IA, Diseño/creatividad, Comunicación, Ética y reflexión social, Trabajo colaborativo y Presentación/defensa. (Ver detalles en la bitácora entregada.) :contentReference[oaicite:2]{index=2}</p>
+
+      <table class="rubric">
+        <thead>
+          <tr>
+            <th>Criterio</th>
+            <th>Excelente (10–9)</th>
+            <th>Satisfactorio (8–7)</th>
+            <th>Básico (6)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rigor científico</td>
+            <td>Explica con precisión procesos biológicos y relación con IA; usa fuentes confiables.</td>
+            <td>Muestra comprensión general con leves imprecisiones.</td>
+            <td>Información incompleta o poco clara.</td>
+          </tr>
+          <tr>
+            <td>Integración de la IA</td>
+            <td>Describe claramente cómo la IA se aplica y aporta soluciones; usa ejemplos reales.</td>
+            <td>Explica la aplicación con algunos vacíos de detalle.</td>
+            <td>Menciona la IA sin conexión clara con la biología.</td>
+          </tr>
+          <tr>
+            <td>Diseño/creatividad</td>
+            <td>Producto atractivo, organizado, funcional e innovador.</td>
+            <td>Producto claro, con diseño convencional o leves fallas.</td>
+            <td>Diseño básico o con errores visuales.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección: Referencias -->
+    <section id="referencias" class="card">
+      <h2>Referencias (APA 7)</h2>
+      <ol>
+        <li>Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO). (2024). Fototrampeo y ciencia ciudadana. Gobierno de México. https://www.gob.mx/conabio/acciones-y-programas/fototrampeo-y-ciencia-ciudadana</li>
+        <li>Chávez, C., De la Torre, A., Bárcenas, H., & Medellín, R. A. (2021). Integrating artificial intelligence and camera traps for monitoring felids in Mexico. <em>Therya, 12</em>(2), 219–228. https://doi.org/10.12933/therya-21-1100</li>
+        <li>Tabak, M. A., Norouzzadeh, M. S., Wolfson, D. W., Sweeney, S. J., Vercauteren, K. C., Snow, N. P., ... & Miller, R. S. (2019). Machine learning to classify animal species in camera trap images: Applications in ecology. <em>Methods in Ecology and Evolution, 10</em>(4), 585–590. https://doi.org/10.1111/2041-210X.13120</li>
+        <li>World Wildlife Fund (WWF). (2022, 4 de febrero). Tecnología e IA, herramientas clave para la conservación del jaguar. https://www.wwf.org.mx/</li>
+        <li>Unión Internacional para la Conservación de la Naturaleza (UICN). (2025, 9 de abril). Arranca en México la segunda fase del proyecto Tech4Nature para la conservación del jaguar. Noticias UICN. https://iucn.org/</li>
+      </ol>
+      <p class="small">Nota: Parte del contenido y la bitácora provienen del documento cargado por el equipo. :contentReference[oaicite:3]{index=3}</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Proyecto elaborado por el equipo — Escuela Preparatoria No.11</p>
+      <p class="small">Plantilla creada para presentación en GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
