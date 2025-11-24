@@ -29,3 +29,24 @@ for (let i = 0; i < 12; i++) {
   leaf.style.animationDelay = Math.random() * 5 + "s";
   leafContainer.appendChild(leaf);
 }
+
+// MAPA DEL JAGUAR (Leaflet)
+var map = L.map('jaguar-map').setView([19.2, -99.1], 5);
+
+// Capa base
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18
+}).addTo(map);
+
+// Zonas donde hay jaguar
+const zonasJaguar = [
+  { nombre: "Selva Lacandona", coords: [16.7, -91.3] },
+  { nombre: "Calakmul", coords: [18.1, -89.9] },
+  { nombre: "Sierra Madre del Sur", coords: [17.0, -96.0] },
+  { nombre: "Sinaloa – Nayarit – Jalisco", coords: [22.5, -105.0] }
+];
+
+zonasJaguar.forEach(z => {
+  L.marker(z.coords).addTo(map)
+    .bindPopup(`<b>${z.nombre}</b>`);
+});
