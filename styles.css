@@ -244,3 +244,11 @@ body {
   0% { transform: translateY(-10%) rotate(0deg); }
   100% { transform: translateY(120vh) rotate(360deg); }
 }
+
+#jaguar-map {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 12px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.22);
+}
