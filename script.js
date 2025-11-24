@@ -17,3 +17,15 @@ function reveal() {
 
 window.addEventListener('scroll', reveal);
 window.addEventListener('load', reveal);
+
+// Hojas cayendo
+const leafContainer = document.querySelector('.falling-leaves');
+
+for (let i = 0; i < 12; i++) {
+  const leaf = document.createElement('div');
+  leaf.classList.add('leaf');
+  leaf.style.left = Math.random() * 100 + "%";
+  leaf.style.animationDuration = 4 + Math.random() * 6 + "s";
+  leaf.style.animationDelay = Math.random() * 5 + "s";
+  leafContainer.appendChild(leaf);
+}
