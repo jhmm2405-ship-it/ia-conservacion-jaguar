@@ -77,4 +77,89 @@ body{
   .menu-btn{display:block;margin-left:auto}
   .main-nav.show{display:flex}
   .two-col{grid-template-columns:1fr}
+
+/* Animación al aparecer (scroll reveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
 }
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efecto glass (tarjetas más modernas) */
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.2);
+}
+
+/* Títulos con animación */
+h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 3px;
+  animation: grow 0.8s ease;
+}
+
+@keyframes grow {
+  from { width: 0; }
+  to { width: 50%; }
+}
+
+/* Imágenes con hover */
+.gallery img {
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Botones del menú */
+.main-nav a {
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+}
+
