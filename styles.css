@@ -190,3 +190,26 @@ body {
 .card:hover {
   border-left: 6px solid var(--accent-light);
 }
+
+.banner-eco {
+  background-image: url('jaguar-banner.jpg'); /* Súbelo a tu repo */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 5px solid var(--accent-dark);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.3);
+}
+
+.banner-eco h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.55);
+}
+
+.banner-eco p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+}
